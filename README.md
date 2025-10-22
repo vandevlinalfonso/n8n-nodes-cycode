@@ -19,14 +19,14 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 ### Option 1: Install via npm (Recommended)
 
 ```bash
-npm install @vandevlin/n8n-nodes-cycode
+npm install @vandevlinalfonso/n8n-nodes-cycode
 ```
 
 ### Option 2: Manual Installation (for development)
 
 ```bash
 cd ~/.n8n/custom
-git clone https://github.com/vandevlin/n8n-nodes-cycode.git
+git clone https://github.com/vandevlinalfonso/n8n-nodes-cycode.git
 cd n8n-nodes-cycode
 npm install
 npm run build
@@ -145,7 +145,7 @@ With these credentials, you can access:
 ### Building from Source
 
 ```bash
-git clone https://github.com/vandevlin/n8n-nodes-cycode.git
+git clone https://github.com/vandevlinalfonso/n8n-nodes-cycode.git
 cd n8n-nodes-cycode
 npm install
 npm run build

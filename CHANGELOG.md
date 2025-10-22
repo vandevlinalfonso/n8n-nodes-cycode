@@ -35,4 +35,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implements n8n ICredentialType interface
 - Uses preAuthentication hook for token management
 
-[0.1.0]: https://github.com/YOUR_USERNAME/n8n-nodes-cycode/releases/tag/v0.1.0
+[0.1.0]: https://github.com/vandevlinalfonso/n8n-nodes-cycode/releases/tag/v0.1.0
