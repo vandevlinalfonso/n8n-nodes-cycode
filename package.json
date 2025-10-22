@@ -1,0 +1,49 @@
+{
+  "name": "@vandevlin/n8n-nodes-cycode",
+  "version": "0.1.0",
+  "description": "n8n nodes for Cycode security platform integration",
+  "keywords": [
+    "n8n-community-node-package",
+    "cycode",
+    "security",
+    "devsecops"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Vandevlin Wibawa",
+    "email": "vandevlin.wibawa@gojek.com"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "~8.32.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "prettier": "^3.5.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/CycodeApi.credentials.js"
+    ],
+    "nodes": []
+  }
+}
