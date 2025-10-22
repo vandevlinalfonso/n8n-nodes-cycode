@@ -1,5 +1,5 @@
 {
-  "name": "@vandevlin/n8n-nodes-cycode",
+  "name": "@vandevlinalfonso/n8n-nodes-cycode",
   "version": "0.1.0",
   "description": "n8n nodes for Cycode security platform integration",
   "keywords": [
