@@ -114,17 +114,16 @@ export class CycodeApi implements ICredentialType {
     test: ICredentialTestRequest = {
         request: {
             baseURL: '={{$credentials.baseUrl || "https://api.cycode.com"}}',
-            url: '/api/v1/user/me',
-            method: 'GET',
-        },
-        rules: [
-            {
-                type: 'responseCode',
-                properties: {
-                    value: 200,
-                    message: 'Authentication failed: Invalid credentials or network error',
-                },
+            url: '/api/v1/auth/api-token',
+            method: 'POST',
+            headers: {
+                'accept': 'application/json',
+                'content-type': 'application/json',
             },
-        ],
+            body: {
+                clientId: '={{$credentials.clientId}}',
+                secret: '={{$credentials.secret}}',
+            },
+        },
     };
 }
