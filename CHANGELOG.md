@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2025-10-28
+
+### Changed
+- **Updated Cycode Logo**: Replaced generic logo with official Cycode brand logo featuring black circular background and white interlocking hexagonal design
+
+## [0.1.2] - 2025-10-28
+
+### Fixed
+- **Fixed Credential Test**: Updated test endpoint from non-existent `/api/v1/user/me` to correct `/api/v1/auth/api-token` authentication endpoint
+- Credentials can now be properly validated when saving
+
+## [0.1.1] - 2025-10-28
+
+### Added
+- **Cycode Node**: Added basic Cycode node with two operations:
+  - Violation → Get Many: Fetch violations from Cycode API
+  - User → Get Current: Get current user information
+- Automatic authentication using saved credentials
+
+### Fixed
+- **Package Installation**: Fixed issue where credentials-only packages cannot be installed in n8n (n8n requires at least one node)
+
 ## [0.1.0] - 2025-10-22
 
 ### Added
@@ -35,4 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implements n8n ICredentialType interface
 - Uses preAuthentication hook for token management
 
+[0.1.3]: https://github.com/vandevlinalfonso/n8n-nodes-cycode/releases/tag/v0.1.3
+[0.1.2]: https://github.com/vandevlinalfonso/n8n-nodes-cycode/releases/tag/v0.1.2
+[0.1.1]: https://github.com/vandevlinalfonso/n8n-nodes-cycode/releases/tag/v0.1.1
 [0.1.0]: https://github.com/vandevlinalfonso/n8n-nodes-cycode/releases/tag/v0.1.0
